@@ -1,0 +1,62 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #1abc9c !important;
+} 
+
+.container {
+	display: grid;
+	width: 400px !important;
+	height: 500px;
+	background: #ecf0f1;
+	margin: 0 auto;
+	margin-top: 50px;
+	border-radius: 10px;
+}
+
+#form {
+	color: black;
+	text-align: center;
+	padding-top: 20px;
+	font-size: 30px;
+}
+
+.name {
+	display: flex;
+	padding-left: 48px;
+	color: black;
+	padding-top: 20px;
+
+
+}
+
+.pass {
+	display: flex;
+	padding-left: 48px;
+	color: black;
+	padding-top: 20px;
+
+}
+
+
+.login {
+	text-align: center;
+	margin-top: 40px;
+
+}
+
+input {
+	width: 280px;
+	height: 50px;
+	border: none;
+	padding: 10px;
+	outline: none;
+	text-decoration-color: none;
+	border-bottom: 2px solid blue;
+}
+
+.submit {
+	display: flex;
+	padding: 20px;
+	margin-left: 25px;
+}
