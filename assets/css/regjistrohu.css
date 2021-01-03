@@ -58,7 +58,7 @@ a:active {
   font-family: "Droid Sans Mono", Helvetica, Arial, sans-serif;
   color: #737373;
   border: 2px solid transparent;
-  trainsition:all .3s linear;
+  transition: all .3s linear;
 }
 
 .department {
