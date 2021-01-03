@@ -1,0 +1,163 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+a:link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+.myForm {
+  position: relative;
+  left: 40%;
+}
+
+.container {
+  
+  background-color: #0D807A;
+}
+
+.header {
+  margin: 5px;
+  padding-left: 54px;
+  font-size: 45px;
+  font-family: 'Lato', Calibri, Arial, sans-serif;
+  color: #DADADA;
+}
+
+.caption {
+  font-size: 20px;
+  font-family: "Droid Sans", sans-serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #DADADA;
+}
+
+.input {
+  width: 300px;
+  height: 30px;
+  background-color: #e7e8ec;
+  box-shadow: none;
+  text-indent: 5%;
+  font-family: "Droid Sans Mono", Helvetica, Arial, sans-serif;
+  color: #737373;
+  border: 2px solid transparent;
+  trainsition:all .3s linear;
+}
+
+.department {
+  width: 300px;
+  height: 30px;
+  background-color: #e7e8ec;
+  box-shadow: none;
+  text-indent: 5%;
+  font-family: "Droid Sans Mono", Helvetica, Arial, sans-serif;
+  color: #737373;
+  border: 2px solid transparent;
+  letter-spacing: 1px;
+}
+
+.date {
+  width: 300px;
+  height: 30px;
+  background-color: #e7e8ec;
+  box-shadow: none;
+  text-indent: 5%;
+  font-family: "Droid Sans Mono", Helvetica, Arial, sans-serif;
+  color: #737373;
+  border: 2px solid transparent;
+}
+
+#age_calculated {
+  font-family: "Droid Sans Mono", Helvetica, Arial, sans-serif;
+  color: #e5e5e5;
+}
+
+.upload {
+  width: 300px;
+  background-color: #e7e8ec;
+  font-family: "Droid Sans Mono", Helvetica, Arial, sans-serif;
+  color: #737373;
+}
+
+.hobby {
+  width: 100px;
+  height: 20px;
+  background-color: #e7e8ec;
+  box-shadow: none;
+  font-family: "Droid Sans Mono", Helvetica, Arial, sans-serif;
+  color: #737373;
+  border: 2px solid transparent;
+}
+
+.admission-year {
+  width: 300px;
+  height: 30px;
+  background-color: #e7e8ec;
+  box-shadow: none;
+  text-indent: 5%;
+  font-family: "Droid Sans Mono", Helvetica, Arial, sans-serif;
+  color: #737373;
+  border: 2px solid transparent;
+  letter-spacing: 1px;
+}
+
+#add-hobby {
+  width: 170px;
+  height: 30px;
+  line-height: 30px;
+  font-family: "Ubuntu", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  color: #4d4d4f;
+  background-color: #90D4E8;
+  text-align: center;
+  margin-left: 68px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.submit {
+  width: 170px;
+  height: 45px;
+  line-height: 45px;
+  font-family: "Ubuntu", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  color: #4d4d4f;
+  background-color: #90D4E8;
+  text-align: center;
+  margin-left: 68px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background-color: #99a3ca;
+}
+
+.input:focus,
+.date:focus,
+.admission-year:focus,
+.upload:focus {
+  border: 2px solid #ed6262;
+  outline: 2px solid transparent;
+}
+
+.department:focus {
+  border: 2px solid #ed6262;
+}
