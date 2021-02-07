@@ -1,62 +1,106 @@
-body {
-	margin: 0;
-	padding: 0;
-	background-color: #1abc9c !important;
-} 
-
-.container {
-	display: grid;
-	width: 400px !important;
-	height: 500px;
-	background: #ecf0f1;
-	margin: 0 auto;
-	margin-top: 50px;
-	border-radius: 10px;
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
 }
-
-#form {
-	color: black;
-	text-align: center;
-	padding-top: 20px;
-	font-size: 30px;
+.hero{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,04)),url(banner.jpg);
+    background-position: center;
+    background-size:cover ;
+    position: absolute;
 }
-
-.name {
-	display: flex;
-	padding-left: 48px;
-	color: black;
-	padding-top: 20px;
-
-
+.form-box{
+    width: 380px;
+    height: 500px;
+    position: relative;
+    margin: 6% auto;
+    background: #fff;
+    padding: 5px;
+    overflow: hidden;
 }
-
-.pass {
-	display: flex;
-	padding-left: 48px;
-	color: black;
-	padding-top: 20px;
-
+.button-box{
+    width: 230px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff00001f;
+    border-radius: 30px;
 }
-
-
-.login {
-	text-align: center;
-	margin-top: 40px;
-
+.toggle-btn{
+    padding:10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
 }
-
-input {
-	width: 280px;
-	height: 50px;
-	border: none;
-	padding: 10px;
-	outline: none;
-	text-decoration-color: none;
-	border-bottom: 2px solid blue;
+#btn{
+    top: 0;
+    left: 0;
+    position:absolute;
+    width: 120px;
+    height: 100%;
+    background:linear-gradient(to right,#ff105f,#ffad0f);
+    border-radius: 30px;
+    transition: .5s;
 }
+.input-group{
+    top: 90px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+.input-field{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid#999;
+    outline: none;
+    background:transparent;
+}
+.department {
+    width: 280px;
+    height: 30px;
+    background-color:rgba(209, 152, 46, 0.336); 
+    text-indent: 5%;
+    color: #737373;
+    border: 2px solid transparent;
+    letter-spacing: 1px;
+  }
 
-.submit {
-	display: flex;
-	padding: 20px;
-	margin-left: 25px;
+.submit-btn{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right,#ff105f,#ffad0f);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+.check-box{
+    margin: 30px 10px 30px 0;
+}
+span{
+    color: #777;
+    font-size: 12px;
+    bottom: 68px;
+    position:absolute;
+}
+#kyqu{
+    left:50px;
+}
+#regjistrohu{
+    left:450px;
+}
+span1{
+    color: #777;
+    font-size: 12px;
+    bottom: 2px;
+    position:absolute;
 }
