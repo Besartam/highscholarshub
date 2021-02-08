@@ -53,7 +53,7 @@
 }
 .input-field{
     width: 100%;
-    padding: 10px 0;
+    padding: 5px 0;
     margin: 5px 0;
     border-left: 0;
     border-top: 0;
@@ -102,5 +102,15 @@ span1{
     color: #777;
     font-size: 12px;
     bottom: 2px;
-    position:absolute;
+}
+.caption{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    outline: none;
+    background:transparent;
+    color: #777;
 }
