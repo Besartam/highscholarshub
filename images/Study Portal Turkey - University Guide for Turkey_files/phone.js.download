@@ -1,0 +1,135 @@
+(function($) {
+
+    $.intercode = function(element, options) {
+
+        var defaults = {
+            country: '',
+            code : '',
+            flag : '',
+            apiToken: null,
+            selectClass : null,
+            intercodeFile : '',
+            showFlag : false, 
+        }
+
+        var plugin = this;
+
+        var $element = $(element),
+            element = element;
+
+        plugin.init = function() {
+
+            plugin.settings = $.extend({}, defaults, options);
+
+            var selectClass = "countrycode ";
+            var codeselect = '<select name="countrycode" ';
+
+            if( plugin.settings.selectClass ){
+
+                selectClass +=  plugin.settings.selectClass;
+            }
+            codeselect += ' class="' + selectClass + '" >';
+
+
+            // Get Country if the We don't have a Default
+            if(! plugin.settings.country){
+
+                var APIurl = "https://ipinfo.io";
+
+                // Add token for paid versions
+                if(plugin.settings.apiToken){
+                    APIurl +='?token='+ plugin.settings.apiToken;
+                }
+
+                $.get(APIurl, function(response) {
+                        plugin.settings.country =  response.country;
+                }, "jsonp")
+
+            }
+
+            console.log('Debug');
+            console.log(plugin.settings.intercodeFile);
+            console.log('Debug');
+
+
+           $.getJSON(plugin.settings.intercodeFile , function(json) {
+                    var selected = false;
+                    $.each(json, function(index) {
+
+
+                        if(json[index].cca2 == plugin.settings.country ){
+
+                            plugin.settings.code = '+'+json[index].callingCode[0];
+                            plugin.settings.flag = json[index].flag;
+
+                            selected = true;
+                        }else{
+
+                            selected = false;
+                        }
+
+                        if(json[index].callingCode[0]){
+
+                                codeselect += '<option  value="+'+json[index].callingCode[0]+'"';
+                                   if(selected){
+                                    codeselect += ' selected="selected"';
+                                   }
+                                if(plugin.settings.showFlag){
+                                    codeselect += '>'+ json[index].flag
+                                }else{
+                                     codeselect += '>';
+                                }
+
+                               codeselect += ' ' + json[index].cca3 +' (+'+ json[index].callingCode[0] +')</option>';
+                        }
+
+
+                 });
+
+                codeselect += '</select>';
+
+                var originalFieldName = $(element).attr('name');
+                var hiddenPhoneField = '<input name="'+originalFieldName+'" type="hidden" />';
+                $(element).before(codeselect).addClass('phonefield').attr('name' , 'phonefield').after(hiddenPhoneField);
+
+                var code =   plugin.settings.code;
+                var phone = $('input[name="phonefield"]').val();
+
+                $( 'input[name="phonefield"]').change(function(){
+                        phone = $(this).val();
+                        console.log(phone);
+                        plugin.updatePhoneField( code , phone , originalFieldName);
+                });
+
+                $( 'select[name="countrycode"]').change(function(){
+                         code  = $(this).val();
+                         console.log(code);
+                         plugin.updatePhoneField( code , phone , originalFieldName);
+                });
+            });
+        }
+
+        plugin.updatePhoneField = function(  code , phone , originalFieldName ) {
+            $('input[name="'+originalFieldName+'"]').val( code + "" + phone );
+        }
+
+        plugin.init();
+    }
+
+
+    $.fn.intercode = function(options) {
+
+        return this.each(function() {
+
+            if (undefined == $(this).data('intercode')) {
+
+                var plugin = new $.intercode(this, options);
+               $(this).data('intercode', plugin);
+
+            }
+
+        });
+
+    }
+
+})(jQuery);
