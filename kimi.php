@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Gjuhe Angleze</title>
+    <title>Kimi</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
@@ -12,36 +12,12 @@
     <div id="page-wrapper">
 
         <!-- Header -->
-        <header id="header">
-            <header id="header" class="alt">
-                <h1>
-                    <a href="index.html">Fizik</a>
-                </h1>
-                <nav id="nav">
-                    <ul>
-                        <li>
-                            <a href="index.html" id="button">Ballina</a>
-                        </li>
-                        <li>
-                            <a href="rrethnesh.html">Rreth Nesh</a>
-                        </li>
-                        <li>
-                            <a href="rregullat.html">Rregullat</a>
-                        </li>
-                        <li>
-                            <a href="grupet.html">Grupet</a>
-                        </li>
-                        <li>
-                            <a href="kontakt.html">Kontakt</a>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
-        </header>
+        <?php include 'includes/navbar.php';
+        ?>
         <!-- Main -->
         <section id="main" class="container">
             <header>
-                <h2>Fizik</h2>
+                <h2>Kimi</h2>
             </header>
             <div class="row">
                 <div class="col-12">
@@ -57,7 +33,7 @@
                     <section class="box">
                         <h3>Kuiz</h3>
 
-                        <h4>Fizik</h4>
+                        <h4>Kimi</h4>
                         <div class="table-wrapper">
                             <table>
                                 <thead>
@@ -70,27 +46,27 @@
                                 <tbody>
                                     <tr>
                                         <td>Level 1</td>
-                                        <td>Fizika 1</td>
+                                        <td>Kimi 1</td>
                                         <td>Kliko ketu</td>
                                     </tr>
                                     <tr>
                                         <td>Level 2</td>
-                                        <td>Fizika 2</td>
+                                        <td>Kimi 2</td>
                                         <td>Kliko ketu</td>
                                     </tr>
                                     <tr>
                                         <td>Level 3</td>
-                                        <td>Fizika 3</td>
+                                        <td>Kimi 3</td>
                                         <td>Kliko ketu</td>
                                     </tr>
                                     <tr>
                                         <td>Level 4</td>
-                                        <td>Fizika 4</td>
+                                        <td>Kimi 4</td>
                                         <td>Kliko ketu</td>
                                     </tr>
                                     <tr>
                                         <td>Level 5</td>
-                                        <td>Fizika 5</td>
+                                        <td>Kimi 5</td>
                                         <td>Kliko ketu</td>
                                     </tr>
                                 </tbody>

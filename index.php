@@ -5,7 +5,7 @@
     <title>High Schoolar's Hub</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" media="screen and ( min-width:900px ) and (max-width:1600px) " href="assets/css/main.css" />
 
 </head>
 
@@ -13,30 +13,8 @@
     <div id="page-wrapper">
 
         <!-- Header -->
-        <header id="header" class="alt">
-            <h1>
-                <a href="index.html">High Schoolar's Hub</a>
-            </h1>
-            <nav id="nav">
-                <ul>
-                    <li>
-                        <a href="index.html">Ballina</a>
-                    </li>
-                    <li>
-                        <a href="rrethnesh.html">Rreth Nesh</a>
-                    </li>
-                    <li>
-                        <a href="rregullat.html">Rregullat</a>
-                    </li>
-                    <li>
-                        <a href="grupet.html">Grupet</a>
-                    </li>
-                    <li>
-                        <a href="kontakt.html">Kontakt</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+        <?php include 'includes/navbar.php';
+        ?>
 
 
         <!-- Banner -->
@@ -45,7 +23,7 @@
             <p>Platforma e vetme në vend për nxënësit e shkollave të mesme</p>
             <ul class="actions special">
                 <li>
-                    <a href="kyqu.html" class="button primary">Kyqu</a>
+                    <a href="kyqu.php" class="button primary">Kyqu</a>
                 </li>
             </ul>
         </section>
@@ -183,8 +161,8 @@
                         <img src="images/pic02.jpg" alt="" />
                     </span>
                     <h3>Mësoni programim online</h3>
-                    <p>Mësoni gjithçka rreth programimit falas. Gjeni gjuhët më të avancuara të programimit dhe bëhuni pjesë e
-                        një tregu sfidues.
+                    <p>Mësoni gjithçka rreth programimit falas. Gjeni gjuhët më të avancuara të programimit dhe bëhuni pjesë
+                        e një tregu sfidues.
                     </p>
                     <ul class="actions special">
                         <li>

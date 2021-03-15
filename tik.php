@@ -12,31 +12,8 @@
     <div id="page-wrapper">
 
         <!-- Header -->
-        <header id="header">
-            <header id="header" class="alt">
-                <h1>
-                    <a href="index.html">TIK</a>
-                </h1>
-                <nav id="nav">
-                    <ul>
-                        <li>
-                            <a href="index.html" id="button">Ballina</a>
-                        </li>
-                        <li>
-                            <a href="rrethnesh.html">Rreth Nesh</a>
-                        </li>
-                        <li>
-                            <a href="rregullat.html">Rregullat</a>
-                        </li>
-                        <li>
-                            <a href="grupet.html">Grupet</a>
-                        </li>
-                        <li>
-                            <a href="kontakt.html">Kontakt</a>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
+        <?php include 'includes/navbar.php';
+        ?>
         </header>
         <!-- Main -->
         <section id="main" class="container">

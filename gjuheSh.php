@@ -12,36 +12,12 @@
     <div id="page-wrapper">
 
         <!-- Header -->
-        <header id="header">
-            <header id="header" class="alt">
-                <h1>
-                    <a href="index.html">Gjeografi</a>
-                </h1>
-                <nav id="nav">
-                    <ul>
-                        <li>
-                            <a href="index.html" id="button">Ballina</a>
-                        </li>
-                        <li>
-                            <a href="rrethnesh.html">Rreth Nesh</a>
-                        </li>
-                        <li>
-                            <a href="rregullat.html">Rregullat</a>
-                        </li>
-                        <li>
-                            <a href="grupet.html">Grupet</a>
-                        </li>
-                        <li>
-                            <a href="kontakt.html">Kontakt</a>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
-        </header>
+        <?php include 'includes/navbar.php';
+        ?>
         <!-- Main -->
         <section id="main" class="container">
             <header>
-                <h2>Gjeografi</h2>
+                <h2>Gjuhë Shqipe</h2>
             </header>
             <div class="row">
                 <div class="col-12">
@@ -57,7 +33,7 @@
                     <section class="box">
                         <h3>Kuiz</h3>
 
-                        <h4>Gjeografi</h4>
+                        <h4>Gjuhë Shqipe</h4>
                         <div class="table-wrapper">
                             <table>
                                 <thead>
@@ -70,27 +46,27 @@
                                 <tbody>
                                     <tr>
                                         <td>Level 1</td>
-                                        <td>Gjeografia fizike </td>
+                                        <td>Gramatike</td>
                                         <td>Kliko ketu</td>
                                     </tr>
                                     <tr>
                                         <td>Level 2</td>
-                                        <td>Gjeografia regjionale</td>
+                                        <td>Letërsi Shqiptare</td>
                                         <td>Kliko ketu</td>
                                     </tr>
                                     <tr>
                                         <td>Level 3</td>
-                                        <td>Gjeografia historike</td>
+                                        <td>Letërsi Botërore</td>
                                         <td>Kliko ketu</td>
                                     </tr>
                                     <tr>
                                         <td>Level 4</td>
-                                        <td>Gjeografia politike</td>
+                                        <td>Gramatike</td>
                                         <td>Kliko ketu</td>
                                     </tr>
                                     <tr>
                                         <td>Level 5</td>
-                                        <td>Gjeografia ekonomike</td>
+                                        <td>Gramatike</td>
                                         <td>Kliko ketu</td>
                                     </tr>
                                 </tbody>

@@ -12,36 +12,12 @@
     <div id="page-wrapper">
 
         <!-- Header -->
-        <header id="header">
-            <header id="header" class="alt">
-                <h1>
-                    <a href="index.html">Gjuhë Angleze</a>
-                </h1>
-                <nav id="nav">
-                    <ul>
-                        <li>
-                            <a href="index.html" id="button">Ballina</a>
-                        </li>
-                        <li>
-                            <a href="rrethnesh.html">Rreth Nesh</a>
-                        </li>
-                        <li>
-                            <a href="rregullat.html">Rregullat</a>
-                        </li>
-                        <li>
-                            <a href="grupet.html">Grupet</a>
-                        </li>
-                        <li>
-                            <a href="kontakt.html">Kontakt</a>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
-        </header>
+        <?php include 'includes/navbar.php';
+        ?>
         <!-- Main -->
         <section id="main" class="container">
             <header>
-                <h2>Gjuhë Angleze</h2>
+                <h2>Fizik</h2>
             </header>
             <div class="row">
                 <div class="col-12">
@@ -57,40 +33,40 @@
                     <section class="box">
                         <h3>Kuiz</h3>
 
-                        <h4>Gjuhë Angleze</h4>
+                        <h4>Fizik</h4>
                         <div class="table-wrapper">
                             <table>
                                 <thead>
                                     <tr>
                                         <th>Level</th>
-                                        <th>Pershkrimi</th>
+                                        <th>Përshkrimi</th>
                                         <th>Path</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <td>Level 1</td>
-                                        <td>Beginner</td>
+                                        <td>Fizika 1</td>
                                         <td>Kliko ketu</td>
                                     </tr>
                                     <tr>
                                         <td>Level 2</td>
-                                        <td>Pre-Intermediate</td>
+                                        <td>Fizika 2</td>
                                         <td>Kliko ketu</td>
                                     </tr>
                                     <tr>
                                         <td>Level 3</td>
-                                        <td>Upper Intermediate</td>
+                                        <td>Fizika 3</td>
                                         <td>Kliko ketu</td>
                                     </tr>
                                     <tr>
                                         <td>Level 4</td>
-                                        <td>Advanced</td>
+                                        <td>Fizika 4</td>
                                         <td>Kliko ketu</td>
                                     </tr>
                                     <tr>
                                         <td>Level 5</td>
-                                        <td>Toefl</td>
+                                        <td>Fizika 5</td>
                                         <td>Kliko ketu</td>
                                     </tr>
                                 </tbody>
