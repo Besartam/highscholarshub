@@ -1,5 +1,5 @@
 <?php
-    include 'includes/dbconnect.php';
+    include 'config/dbconnect.php';
 
     if (isset($_GET['id'])) {
         $id = $_GET['id'];

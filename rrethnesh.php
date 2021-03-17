@@ -1,3 +1,7 @@
+<?php require 'config/dbconnect.php';
+
+?>
+
 <!DOCTYPE HTML>
 
 <html>

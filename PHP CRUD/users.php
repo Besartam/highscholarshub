@@ -1,5 +1,5 @@
 <?php
-	require 'includes/dbconnect.php';
+	require 'config/dbconnect.php';
     
 	$query = $pdo->query('SELECT * FROM users');
     $users = $query->fetchAll();

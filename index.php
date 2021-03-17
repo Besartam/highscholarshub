@@ -14,7 +14,7 @@
 </head>
 
 <body class="landing is-preload">
-    <div id="page-wrapper">
+    <div id="page-wrapper swiper-zoom-container ">
 
         <!-- Header -->
         <header id="header" class="alt">
@@ -28,7 +28,7 @@
 
 
         <!-- Banner -->
-        <section id="banner">
+        <section id="banner swiper-zoom-container">
             <h2>High Scholar's Hub</h2>
             <p>Platforma e vetme në vend për nxënësit e shkollave të mesme</p>
             <ul class="actions special">

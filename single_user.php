@@ -1,5 +1,5 @@
 <?php
-require 'includes/dbconnect.php';
+require 'config/dbconnect.php';
 //Duhet me pas kujdes me u perdor sessioni (per qeshtje siguri)
 
 if(isset($_GET['id'])){
@@ -11,7 +11,7 @@ $query = $pdo->prepare($sql);
 $query->execute(['id' => $id]);
 
 $user = $query->fetch();
-
+/*
 if(isset($_POST['submit'])){
     $name = $_POST['name'];
     $email = $_POST['email'];
@@ -24,12 +24,11 @@ if(isset($_POST['submit'])){
 
     $query->execute();
     header("Location: users.php");
-}
+}*/
 
 ?>
 
-<form method="post">
-<input type="text" name="name" value="<?php echo $user['name']; ?>"/><br>
-<input type="text" name="email" value="<?php echo $user['email']; ?>"/><br>
-<input type="submit" name="submit" value="Submit">
-</form>
+
+<h2><?php echo $user['name']; ?></h2>
+<h2><?php echo $user['email']; ?></h2>
+<h2><?php echo $user['password']; ?></h2>

@@ -6,7 +6,7 @@ if( isset($_SESSION['user_id']) ){
     header("Location: /");
 }
 
-require 'includes/dbconnect.php';
+require 'config/dbconnect.php';
 
 
 if(isset($_POST['submit'])):
@@ -34,6 +34,7 @@ if(isset($_POST['submit'])):
 endif;
 
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -44,14 +45,10 @@ endif;
     <?php if(!empty($message)): ?>
         <p><?php echo $message ?></p>
     <?php endif; ?>
-
-    <h1>Login</h1>
-    <span>or <a href="signup.php">signup here</a></span>
-
-    <form action="login.php" method="POST">
-        <input type="text" placeholder="Enter your email" name="email"><br>
-        <input type="password" placeholder="and password" name="password"><br>
-        <input type="submit" name="submit" value="Submit">
-    </form>
+    <form id = "kyqu" class="input-group">
+                    <input name="emri" type="text" class="input-field" placeholder="Perdoruesi" required>
+                    <input name="password" type="text" class="input-field" placeholder="Fjalekalimi" required>
+                    <button name="submit"type="submit" class="submit-btn">Kyqu</button>
+            </form>
 </body>
 </html>

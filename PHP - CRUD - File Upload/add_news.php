@@ -14,7 +14,7 @@ session_start();
 
 if($_SESSION['permission'] == 1){
 
-require 'includes/dbconnect.php' ;
+require 'config/dbconnect.php' ;
 
 $query= $pdo->query('SELECT * from news_category');
 $categoryinfo = $query->fetchAll();

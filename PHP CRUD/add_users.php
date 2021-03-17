@@ -1,4 +1,4 @@
-<?php require('includes/dbconnect.php'); ?>
+<?php require('config/dbconnect.php'); ?>
     
     <?php 
         if(isset($_POST['submit'])){

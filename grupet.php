@@ -1,9 +1,7 @@
-<?php require 'config/dbconnect.php';
-$query = $pdo->query =('SELECT * from grupet LIMIT 3'); 
-$grupet = $query->fetchAll();
+<!--DB -->
+    <?php require 'config/dbconnect.php';
+
 ?>
-
-
 
 
 <!DOCTYPE HTML>
@@ -54,69 +52,59 @@ $grupet = $query->fetchAll();
                     <section class="box">
                         <div class="box alt">
                             <div class="row gtr-50 gtr-uniform">
-                                <?php foreach($grupet as $grupet): ?>
-
                                 <div class="col-4 grup" id="gjsh">
                                     <span class="image fit">
-                                        <img src="images/GjeSh.png" <?php echo $grup['image'];?> alt="" />
+                                        <img src="images/GjeSh.png" alt="" />
                                     </span>
-                                    <a href="gjuheSh.php" class="button small fit">Gjuhë Shqipe</a>
+                                    <a href="grupet.php" class="button small fit">Gjuhë Shqipe</a>
                                 </div>
-
-                                <tr>
-                                    <td><?php echo $users['name']; ?></td>
-                                    <td><?php echo $users['email']; ?></td>
-                                    <td><a href="single_user.php?id=<?php echo $user['id']; ?>" >Show</a></td>
-                                    <td><a href="edit_user.php?id=<?php echo $user['id']; ?>">Edit</a></td>
-                                    <td><a href="delete.php?id=<?php echo $user['id']; ?>">Delete</a></td> 
-                                 </tr>
                                 <div class="col-4 grup" id="gja">
                                     <span class="image fit">
                                         <img src="images/anglisht.png" alt="" />
                                     </span>
-                                    <a href="gjuheAng.math" class="button small fit">Gjuhë Angleze</a>
+                                    <a href="grupet.php" class="button small fit">Gjuhë Angleze</a>
                                 </div>
                                 <div class="col-4 grup" id="math">
                                     <span class="image fit">
                                         <img src="images/math.png" alt="" />
                                     </span>
-                                    <a href="math.php" class="button small fit">Matematikë</a>
+                                    <a href="grupet.php" class="button small fit">Matematikë</a>
                                 </div>
                                 <div class="col-4" id="fiz">
                                     <span class="image fit">
                                         <img src="images/fizik.png" alt="" />
                                     </span>
-                                    <a href="fizik.html" class="button small fit">Fizik</a>
+                                    <a href="grupet.php" class="button small fit">Fizik</a>
                                 </div>
                                 <div class="col-4">
                                     <span class="image fit">
                                         <img src="images/kimi.png" alt="" />
                                     </span>
-                                    <a href="kimi.html" class="button small fit">Kimi</a>
+                                    <a href="grupet.php" class="button small fit">Kimi</a>
                                 </div>
                                 <div class="col-4">
                                     <span class="image fit">
                                         <img src="images/bio.png" alt="" />
                                     </span>
-                                    <a href="bio.html" class="button small fit">Biologji</a>
+                                    <a href="grupet.php" class="button small fit">Biologji</a>
                                 </div>
                                 <div class="col-4">
                                     <span class="image fit">
                                         <img src="images/tik.png" alt="" />
                                     </span>
-                                    <a href="tik.html" class="button small fit">TIK</a>
+                                    <a href="grupet.php" class="button small fit">TIK</a>
                                 </div>
                                 <div class="col-4">
                                     <span class="image fit">
                                         <img src="images/histori.png" alt="" />
                                     </span>
-                                    <a href="histori.html" class="button small fit">Histori</a>
+                                    <a href="grupet.html" class="button small fit">Histori</a>
                                 </div>
                                 <div class="col-4">
                                     <span class="image fit">
                                         <img src="images/Gjeo.png" alt="" />
                                     </span>
-                                    <a href="gjeo.html" class="button small fit">Gjeografi</a>
+                                    <a href="grupet.php" class="button small fit">Gjeografi</a>
                                 </div>
                             </div>
                         </div>

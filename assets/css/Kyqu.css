@@ -24,7 +24,7 @@
     width: 230px;
     margin: 35px auto;
     position: relative;
-    box-shadow: 0 0 20px 9px #ff00001f;
+    box-shadow: 0 0 20px 9px #666;
     border-radius: 30px;
 }
 .toggle-btn{
@@ -41,7 +41,7 @@
     position:absolute;
     width: 120px;
     height: 100%;
-    background:linear-gradient(to right,#ff105f,#ffad0f);
+    background:linear-gradient(to right,#e89980,#90b0ba);
     border-radius: 30px;
     transition: .5s;
 }
@@ -65,9 +65,9 @@
 .department {
     width: 280px;
     height: 30px;
-    background-color:rgba(209, 152, 46, 0.336); 
+    background-color:#e5cb95; 
     text-indent: 5%;
-    color: #737373;
+    color: #ffffff;
     border: 2px solid transparent;
     letter-spacing: 1px;
   }
@@ -78,7 +78,7 @@
     cursor: pointer;
     display: block;
     margin: auto;
-    background: linear-gradient(to right,#ff105f,#ffad0f);
+    background: linear-gradient(to right,#e89980,#90b0ba);
     border: 0;
     outline: none;
     border-radius: 30px;

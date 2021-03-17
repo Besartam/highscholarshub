@@ -1,3 +1,7 @@
+<?php
+require 'config/dbconnect.php';
+?>
+
 <html>
     <head>
         <title>Kyqu dhe Regjistrohu</title>
@@ -12,35 +16,30 @@
                     <button type="button" class="toggle-btn" onclick="kyqu()">Kyqu</button>
                     <button type="button" class="toggle-btn" onclick="regjistrohu()">Regjistrohu</button>                    
                 </div>
-                <form id = "kyqu" class="input-group">
-                    <input type="text" class="input-field" placeholder="Perdoruesi" required>
-                    <input type="text" class="input-field" placeholder="Fjalekalimi" required>
-                    <input type="checkbox" class="check-box"> <span> Remember Password </span>
-                    <button type="submit" class="submit-btn">Kyqu</button>
-                </form>
-                <form id="regjistrohu" class="input-group">
-                    <input type="text" class="input-field" placeholder="Emri" required>
-                    <input type="text" class="input-field" placeholder="Mbiemri" required>
+               <!--Kyqu-->
+               <?php
+               include 'login.php';  ?>
+             
+
+               <!-- <form id = "kyqu" class="input-group">
+                   // <input name="emri" type="text" class="input-field" placeholder="Perdoruesi" required>
+                   // <input name="password" type="text" class="input-field" placeholder="Fjalekalimi" required>
+                   // <button name="submit"type="submit" class="submit-btn">Kyqu</button>
+           </form>--> 
+                <!--Regjistrogu-->
+                <?php include 'signup.php'; ?>
+               <!-- <form id="regjistrohu" class="input-group">
+                    <input name ="emri" type="text" class="input-field" placeholder="Emri" required>
                     <input type="email" class="input-field" placeholder="Email" required>
-
-
-                    <div class="caption">Zgjedh Gjinin tuaj</div>
-                        <input type="radio" name="gender" class="hobby" value="male">
-                        <span1 style="position: relative;">Mashkull</span1>
-                         <br>
-                         <input type="radio" name="gender" class="hobby" value="female">
-                         <span1 style="position: relative;">Femër</span1>
-                         <br>
-                        <input type="text" class="input-field" placeholder="Shkruaj fjalekalimin" required>   
+                        <input type="text" class="input-field" placeholder="Shkruaj fjalekalimin" required>
                         <br>
-                        <input type="text" class="input-field" placeholder="Konfirmo fjalekalimin" required>   
-                        <br>
-                    <input type="checkbox" class="check-box"> <span> I agree to terms &  conditions</span>
-                    <button type="submit" class="submit-btn">Regjistrohu</button>
+                    <button name="submit" type="submit" class="submit-btn">Regjistrohu</button>
                 </form>
+            -->
             </div> 
         </div>
         <script>
+
             var x = document.getElementById("kyqu");
             var y = document.getElementById("regjistrohu");
             var z = document.getElementById("btn");

@@ -14,15 +14,16 @@
         <header id="header">
             <header id="header" class="alt">
                 <h1>
-                    <a href="index.html">High Schoolar's Hub</a>
+                    <a href="index.php">High Schoolar's Hub</a>
                 </h1>
                  <!--Nav Bar--> 
           <?php include 'includes/navbar.php'; ?> 
             <!--End of Nav Bar--> 
             </header>
         </header>
-
-        <!-- Main -->
+<?php include 'PHP - CRUD - File Upload/contact.php';
+?>
+        <!-- Main 
         <section id="main" class="container medium">
             <header>
                 <h2>Na kontaktoni</h2>
@@ -54,7 +55,7 @@
                 </form>
             </div>
         </section>
-
+-->
         <!-- Footer -->
         <footer id="footer">
             <ul class="icons">

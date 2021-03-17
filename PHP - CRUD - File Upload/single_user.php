@@ -1,5 +1,5 @@
 <?php
-require 'includes/dbconnect.php';
+require 'config/dbconnect.php';
 //Duhet me pas kujdes me u perdor sessioni (per qeshtje siguri)
 
 if(isset($_GET['id'])){

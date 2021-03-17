@@ -1,6 +1,4 @@
-
-  
-  
+ 
   <nav id="nav">
                 <ul>
                     <li>

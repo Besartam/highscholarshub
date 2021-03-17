@@ -1,5 +1,5 @@
 <?php
 
- setcookie("user_name", "Betimi", time() - 360,'/');
+ setcookie("user_name", "Besarta", time() - 360,'/');
 
 ?>

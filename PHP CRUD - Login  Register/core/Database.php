@@ -8,7 +8,7 @@ class Database
     {
         try{
             session_start();
-            $link = new PDO('mysql:host=localhost;dbname=webprojekti', 'root', '');
+            $link = new PDO('mysql:host=localhost;dbname=projektif', 'root', '');
             $this->pdo = $link;
         }catch(PDOException $e) {
             die('DIE'. $e->getMessage());
