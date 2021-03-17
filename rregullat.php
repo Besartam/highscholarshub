@@ -16,27 +16,11 @@
         <header id="header">
             <header id="header" class="alt">
                 <h1>
-                    <a href="index.html">High Schoolar's Hub</a>
+                    <a href="index.php">High Schoolar's Hub</a>
                 </h1>
-                <nav id="nav">
-                    <ul>
-                        <li>
-                            <a href="index.html" id="button">Ballina</a>
-                        </li>
-                        <li>
-                            <a href="rrethnesh.html">Rreth Nesh</a>
-                        </li>
-                        <li>
-                            <a href="rregullat.html">Rregullat</a>
-                        </li>
-                        <li>
-                            <a href="index.html">Grupet</a>
-                        </li>
-                        <li>
-                            <a href="kontakt.html">Kontakt</a>
-                        </li>
-                    </ul>
-                </nav>
+                 <!--Nav Bar--> 
+          <?php include 'includes/navbar.php'; ?> 
+            <!--End of Nav Bar--> 
             </header>
         </header>
         <!-- Main -->

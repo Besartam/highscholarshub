@@ -12,8 +12,16 @@
     <div id="page-wrapper">
 
         <!-- Header -->
-        <?php include 'includes/navbar.php';
-        ?>
+        <header id="header">
+            <header id="header" class="alt">
+                <h1>
+                    <a href="index.php">Gjuhë Shqipe</a>
+                </h1>
+             <!--Nav Bar--> 
+          <?php include 'includes/navbar.php'; ?> 
+            <!--End of Nav Bar--> 
+            </header>
+        </header>
         <!-- Main -->
         <section id="main" class="container">
             <header>

@@ -1,3 +1,7 @@
+<?php require 'config/dbconnect.php';
+?>
+
+
 <!DOCTYPE HTML>
 <html>
 
@@ -5,7 +9,7 @@
     <title>High Schoolar's Hub</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" media="screen and ( min-width:900px ) and (max-width:1600px) " href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
 
 </head>
 
@@ -13,8 +17,14 @@
     <div id="page-wrapper">
 
         <!-- Header -->
-        <?php include 'includes/navbar.php';
-        ?>
+        <header id="header" class="alt">
+            <h1>
+                <a href="index.php">High Schoolar's Hub</a>
+            </h1>
+            <!--Nav Bar--> 
+          <?php include 'includes/navbar.php'; ?> 
+            <!--End of Nav Bar--> 
+        </header>
 
 
         <!-- Banner -->
@@ -161,8 +171,8 @@
                         <img src="images/pic02.jpg" alt="" />
                     </span>
                     <h3>Mësoni programim online</h3>
-                    <p>Mësoni gjithçka rreth programimit falas. Gjeni gjuhët më të avancuara të programimit dhe bëhuni pjesë
-                        e një tregu sfidues.
+                    <p>Mësoni gjithçka rreth programimit falas. Gjeni gjuhët më të avancuara të programimit dhe bëhuni pjesë e
+                        një tregu sfidues.
                     </p>
                     <ul class="actions special">
                         <li>

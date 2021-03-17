@@ -1,3 +1,11 @@
+<?php require 'config/dbconnect.php';
+$query = $pdo->query =('SELECT * from grupet LIMIT 3'); 
+$grupet = $query->fetchAll();
+?>
+
+
+
+
 <!DOCTYPE HTML>
 
 <html>
@@ -13,8 +21,16 @@
     <div id="page-wrapper">
 
         <!-- Header -->
-        <?php include 'includes/navbar.php';
-        ?>
+        <header id="header">
+            <header id="header" class="alt">
+                <h1>
+                    <a href="grupet.php">Grupet</a>
+                </h1>
+               <!--Nav Bar--> 
+          <?php include 'includes/navbar.php'; ?> 
+            <!--End of Nav Bar--> 
+            </header>
+        </header>
         <!-- Main -->
         <section id="main" class="container">
             <header>
@@ -38,25 +54,35 @@
                     <section class="box">
                         <div class="box alt">
                             <div class="row gtr-50 gtr-uniform">
-                                <div class="col-4">
+                                <?php foreach($grupet as $grupet): ?>
+
+                                <div class="col-4 grup" id="gjsh">
                                     <span class="image fit">
-                                        <img src="images/GjeSh.png" alt="" />
+                                        <img src="images/GjeSh.png" <?php echo $grup['image'];?> alt="" />
                                     </span>
-                                    <a href="gjuheSh.html" class="button small fit">Gjuhë Shqipe</a>
+                                    <a href="gjuheSh.php" class="button small fit">Gjuhë Shqipe</a>
                                 </div>
-                                <div class="col-4">
+
+                                <tr>
+                                    <td><?php echo $users['name']; ?></td>
+                                    <td><?php echo $users['email']; ?></td>
+                                    <td><a href="single_user.php?id=<?php echo $user['id']; ?>" >Show</a></td>
+                                    <td><a href="edit_user.php?id=<?php echo $user['id']; ?>">Edit</a></td>
+                                    <td><a href="delete.php?id=<?php echo $user['id']; ?>">Delete</a></td> 
+                                 </tr>
+                                <div class="col-4 grup" id="gja">
                                     <span class="image fit">
                                         <img src="images/anglisht.png" alt="" />
                                     </span>
-                                    <a href="gjuheAng.html" class="button small fit">Gjuhë Angleze</a>
+                                    <a href="gjuheAng.math" class="button small fit">Gjuhë Angleze</a>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-4 grup" id="math">
                                     <span class="image fit">
                                         <img src="images/math.png" alt="" />
                                     </span>
-                                    <a href="math.html" class="button small fit">Matematikë</a>
+                                    <a href="math.php" class="button small fit">Matematikë</a>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-4" id="fiz">
                                     <span class="image fit">
                                         <img src="images/fizik.png" alt="" />
                                     </span>
@@ -151,5 +177,4 @@
     <script src="assets/js/main.js"></script>
 
 </body>
-
 </html>

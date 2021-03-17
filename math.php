@@ -15,27 +15,11 @@
         <header id="header">
             <header id="header" class="alt">
                 <h1>
-                    <a href="index.html">Matematikë</a>
+                    <a href="index.php">Matematikë</a>
                 </h1>
-                <nav id="nav">
-                    <ul>
-                        <li>
-                            <a href="index.html" id="button">Ballina</a>
-                        </li>
-                        <li>
-                            <a href="rrethnesh.html">Rreth Nesh</a>
-                        </li>
-                        <li>
-                            <a href="rregullat.html">Rregullat</a>
-                        </li>
-                        <li>
-                            <a href="grupet.html">Grupet</a>
-                        </li>
-                        <li>
-                            <a href="kontakt.html">Kontakt</a>
-                        </li>
-                    </ul>
-                </nav>
+             <!--Nav Bar--> 
+          <?php include 'includes/navbar.php'; ?> 
+            <!--End of Nav Bar--> 
             </header>
         </header>
         <!-- Main -->
